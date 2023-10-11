@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 10em;
+  margin: 0 auto;
+  gap: 1em;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 2.5em;
+  justify-content: center;
+}
+.passwordInput {
+  font-size: 16px;
+  display: block;
+  width: calc(16em - 6px);
+  border-radius: 5px;
+  border: gray 1px solid;
+  outline: 0;
+  height: 2em;
+  padding: 0 2px;
+}
+.assessment {
+  box-sizing: border-box;
+  display: flex;
+  gap: 0.1em;
+  width: 16em;
+  height: 2em;
+}
+.assessmentSection {
+  background-color: gray;
+  flex: 1;
+}
+.assessmentSection:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+}
+.assessmentSection:nth-last-child(1) {
+  border-radius: 0 5px 5px 0;
+}
+.weak, .invalid {
+  background-color: orangered;
+}
+.medium {
+  background-color: orange;
+}
+.strong {
+  background-color: green;
+}
